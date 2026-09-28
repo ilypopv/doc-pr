@@ -103,11 +103,19 @@ Install the skill directly from GitHub — no clone required, since the Copilot 
 is fully self-contained:
 
 ```sh
-copilot skill add --project https://raw.githubusercontent.com/ilypopv/doc-pr/main/adapters/copilot-cli/SKILL.md
+copilot skill add https://raw.githubusercontent.com/ilypopv/doc-pr/main/adapters/copilot-cli/SKILL.md
 ```
 
+This installs it **personally** (`~/.copilot/skills/doc-pr/`, or under your active
+profile's skills directory if you use `copilot profile`), so it's available in every
+project without ever touching that project's git repo.
+
+Do **not** add `--project` unless you specifically want the skill checked into the
+current repository's `.github/skills/` — that copies `SKILL.md` straight into the
+project directory, where it can get accidentally `git add`ed and pushed.
+
 (If you're working from a local checkout instead, e.g. before this repo is pushed to
-GitHub, use `copilot skill add --project ./adapters/copilot-cli/SKILL.md`.)
+GitHub, use `copilot skill add ./adapters/copilot-cli/SKILL.md`.)
 
 Then, inside Copilot CLI, just ask in plain language:
 
