@@ -1,0 +1,11 @@
+{
+  "name": "doc-pr-marketplace",
+  "owner": { "name": "ilypopv" },
+  "plugins": [
+    {
+      "name": "doc-pr",
+      "source": "./",
+      "description": "Generate a Markdown knowledge-base summary of a GitHub PR."
+    }
+  ]
+}
