@@ -1,0 +1,7 @@
+{
+  "name": "doc-pr",
+  "description": "Generate a Markdown knowledge-base summary of a GitHub PR.",
+  "version": "1.0.0",
+  "author": { "name": "ilypopv" },
+  "commands": ["./adapters/claude-code/doc-pr.md"]
+}
